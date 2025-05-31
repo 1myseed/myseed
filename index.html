@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Seed</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Contenedor para el fondo difuminado */
+    .background {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('fondo.jpg') no-repeat center center/cover;
+      filter: blur(8px);
+      z-index: -1;
+      transform: scale(1.1); /* Para evitar bordes al difuminar */
+    }
+
+    /* Contenedor principal */
+    .container {
+      position: relative;
+      max-width: 500px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 15px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      backdrop-filter: saturate(180%) blur(15px);
+      -webkit-backdrop-filter: saturate(180%) blur(15px);
+    }
+
+    h1 {
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #a4de02; /* verde claro */
+      text-shadow: 0 0 8px #a4de02aa;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-bottom: 1.8rem;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 2rem;
+      text-align: left;
+      padding-left: 1rem;
+      color: #ccc;
+      font-size: 1.05rem;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+      position: relative;
+      padding-left: 1.4rem;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #a4de02;
+      font-weight: bold;
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    a.download-button {
+      display: inline-block;
+      padding: 15px 40px;
+      background: linear-gradient(135deg, #a4de02, #6b9f00);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 6px 15px #a4de0222;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+    a.download-button:hover {
+      background: linear-gradient(135deg, #6b9f00, #a4de02);
+      box-shadow: 0 10px 25px #a4de0444;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+    <h1>My Seed</h1>
+    <p>My Seed combina tecnología y naturaleza para ayudarte a gestionar tus cultivos con facilidad y precisión.</p>
+    <ul>
+      <li>Monitoreo inteligente en tiempo real</li>
+      <li>Alertas personalizadas para riego y fertilización</li>
+      <li>Consejos expertos a tu alcance</li>
+      <li>Interfaz sencilla e intuitiva</li>
+    </ul>
+    <a class="download-button" href="ruta/a/tu/app.apk" download>Descargar App</a>
+  </div>
+
+</body>
+</html>
