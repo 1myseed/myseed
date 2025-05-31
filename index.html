@@ -25,7 +25,27 @@
       background: url('fondo.jpg') no-repeat center center/cover;
       filter: blur(8px);
       z-index: -1;
-      transform: scale(1.1); /* Para evitar bordes al difuminar */
+      transform: scale(1.1);
+    }
+
+    /* Icono de Instagram */
+    .instagram-icon {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 10;
+    }
+
+    .instagram-icon img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .instagram-icon img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px #a4de02aa;
     }
 
     /* Contenedor principal */
@@ -48,7 +68,7 @@
       margin-bottom: 1rem;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #a4de02; /* verde claro */
+      color: #a4de02;
       text-shadow: 0 0 8px #a4de02aa;
     }
 
@@ -73,6 +93,7 @@
       position: relative;
       padding-left: 1.4rem;
     }
+
     ul li::before {
       content: "✔";
       position: absolute;
@@ -96,6 +117,7 @@
       transition: all 0.3s ease;
       user-select: none;
     }
+
     a.download-button:hover {
       background: linear-gradient(135deg, #6b9f00, #a4de02);
       box-shadow: 0 10px 25px #a4de0444;
@@ -123,6 +145,11 @@
 
   <div class="background"></div>
 
+  <!-- Ícono de Instagram -->
+  <a class="instagram-icon" href="https://www.instagram.com/tu_usuario/" target="_blank">
+    <img src="Ig.png" alt="Instagram">
+  </a>
+
   <div class="container">
     <h1>My Seed</h1>
     <p>My Seed combina tecnología y naturaleza para ayudarte a gestionar tus cultivos con facilidad y precisión.</p>
@@ -135,7 +162,7 @@
     <a class="download-button" href="https://github.com/1myseed/myseed/releases/download/1.0.0/My.Seed.Setup.1.0.0.exe" download>Descargar App</a>
 
     <p class="link-extra">
-      ¿Quieres La version movil?
+      ¿Quieres la versión móvil?
       <a href="https://1myseed.github.io/myseedapp/" target="_blank">Visitá la página oficial</a>
     </p>
   </div>
